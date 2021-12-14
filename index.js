@@ -4,7 +4,7 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
 const { token } = require('./config.json');
 
-client.on("ready", () => {
+client.once("ready", () => {
   console.log("Logado");
 });
 
